@@ -4,6 +4,7 @@ import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import profilePic from '../public/photo.jpeg';
 import Link from 'next/link';
+import Navbar from '../components/Navbar';
 
 const Home: NextPage = () => {
   return (
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Navbar></Navbar>
       <section>
         <h1>Jimmy Chen</h1>
         <div>
