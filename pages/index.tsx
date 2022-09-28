@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import profilePic from '../public/photo.jpeg';
-import Link from 'next/link';
+import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 
 const Home: NextPage = () => {
@@ -19,7 +19,7 @@ const Home: NextPage = () => {
       </Head>
       <Navbar></Navbar>
       <section>
-        <h1>Jimmy Chen</h1>
+        <h1>Hello</h1>
         <div>
           <p>
             QA Automation Engineer at Esri, experienced with Selenium and Java.
@@ -30,23 +30,8 @@ const Home: NextPage = () => {
         <div>
           <Image src={profilePic} alt="Profile Picture" />
         </div>
-        <div>
-          <a
-            href="https://www.linkedin.com/in/haoyan-chen/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            LinkedIn
-          </a>
-          <a
-            href="https://github.com/jimmychen97"
-            target="_blank"
-            rel="noreferrer"
-          >
-            GitHub
-          </a>
-        </div>
       </section>
+      <Footer></Footer>
     </div>
   );
 };

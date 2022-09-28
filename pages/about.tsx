@@ -1,7 +1,13 @@
 import React from 'react';
+import Navbar from '../components/Navbar';
 
 const about = () => {
-  return <div>about</div>;
+  return (
+    <>
+      <Navbar></Navbar>
+      <h1>About</h1>
+    </>
+  );
 };
 
 export default about;
